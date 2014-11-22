@@ -1,0 +1,46 @@
+body {
+    /*background-image: url(../url/homepage.jpg);*/
+}
+
+.container {
+    width: 980px;
+    margin: auto;
+    border: solid 1px;
+}
+
+#branding {
+    height: 85px;
+}
+
+#branding .middle {
+    margin-top: 26px
+}
+
+.logo {
+    width: 192px;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #3f8252;
+    margin-top: 12px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.left {
+    float:left;
+}
+
+.bbb {
+    margin-left: 366px;
+}
+.availability {
+    margin-left: 50px;
+    text-align: right;
+}
+
+.facebook-icon {
+    margin-left: 12px;
+}
