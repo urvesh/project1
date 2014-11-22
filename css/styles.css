@@ -69,3 +69,27 @@ body {
 #nav-bar ul li:first-child {
     margin-left: 153px;
 }
+
+.header {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+.header h1 {
+    color: #5d5d5d;
+    margin-bottom: 0;
+    }
+
+.header .sub-text {
+    font-size: 14px;
+    color: #a5a5a5;
+}
+
+.header .statement {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #3f8252;
+    padding-top: 20px;
+    letter-spacing: 6px;
+}
