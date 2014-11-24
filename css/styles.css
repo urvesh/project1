@@ -30,9 +30,12 @@ body {
 }
 
 .left {
-    float:left;
+    float: left;
 }
 
+.right {
+    float: right;
+}
 .bbb {
     margin-left: 366px;
 }
@@ -99,9 +102,7 @@ body {
     width: 550px;
     height: 280px;
     background-color: #4a5b66;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px auto 40px auto;
     border-radius: 5px;
 }
 
@@ -119,4 +120,49 @@ body {
 .video .circle img {
     margin-top: 15px;
     margin-left: 34px;
+}
+
+.facebook-bar {
+    height: 50px;
+    background: -webkit-radial-gradient(#506ba1, #3f507d);
+    background: -o-radial-gradient(#506ba1, #3f507d);
+    background: -moz-radial-gradient(#506ba1, #3f507d);
+    background: radial-gradient(#506ba1, #3f507d);
+    border-radius: 5px;
+}
+
+.facebook-bar .facebook-logo.left {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.facebook-bar .facebook-logo.right {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+
+.facebook-bar .like-us {
+    font-family: Helvetica, sans-serif;
+    margin-top: 16px;
+    margin-left: 175px;
+    color: white;
+}
+
+.facebook-bar .like-us span:first-child {
+    font-weight: bold;
+}
+
+.facebook-button img {
+    margin-top: 13px;
+    margin-left: 15px;
+}
+
+.facebook-bar .facebook-likes {
+    margin-top: 16px;
+    margin-left: 5px;
+    color: white;
+    font-size: 14px;
+    font-family: Open Sans, sans-serif;
+    font-weight: bold;
 }
