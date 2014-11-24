@@ -166,3 +166,32 @@ body {
     font-family: Open Sans, sans-serif;
     font-weight: bold;
 }
+
+.content {
+    margin-top: 40px;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+}
+
+.content p {
+    margin: 0;
+    line-height: 160%;
+}
+
+.content-left {
+    width: 516px;
+}
+
+.content-left p:first-child {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.content-right ul {
+    margin: 0;
+}
+
+.content-right ul li {
+    margin-bottom: .3em;
+}
