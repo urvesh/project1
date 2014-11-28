@@ -263,8 +263,7 @@ html, body {
     border-bottom: 1px solid #e9e9e9;
 }
 
-.heating {
-    background-color: #eef1f5;
+.section {
     /*height: 400px;*/
     overflow: hidden;
     padding-top: 40px;
@@ -272,15 +271,26 @@ html, body {
     margin: auto;
 }
 
-.heating h2 {
+.section.heating {
+    background-color: #eef1f5;
+}
+
+.section h2 {
     margin: 0;
     letter-spacing: 5px;
     font-family: Open Sans, sans-serif;
-    color: #c0392b;
     text-align: center;
 }
 
-.heating p {
+.section.heating h2 {
+    color: #c0392b;
+}
+
+.section.cooling h2 {
+    color: #2980b9;
+}
+
+.section p {
     text-align: center;
     font-family: Open Sans, sans-serif;
     font-size: 14px;
