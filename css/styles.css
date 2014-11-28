@@ -1,11 +1,17 @@
-body {
+
+html, body {
     /*background-image: url(../img/homepage.jpg);*/
+    /*font-family: Open Sans, sans-serif;*/
+    margin: 0;
+    padding: 0;
+    min-width: 980px;
 }
 
 .container {
     width: 980px;
     margin: auto;
     /*border: solid 1px;*/
+    overflow: auto;
 }
 
 #branding {
@@ -200,6 +206,7 @@ body {
 .table {
     overflow: hidden;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .table .row-header.blue{
@@ -254,4 +261,45 @@ body {
     padding-left: 30px;
     height: 40px;
     border-bottom: 1px solid #e9e9e9;
+}
+
+.heating {
+    background-color: #eef1f5;
+    /*height: 400px;*/
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: auto;
+}
+
+.heating h2 {
+    margin: 0;
+    letter-spacing: 5px;
+    font-family: Open Sans, sans-serif;
+    color: #c0392b;
+    text-align: center;
+}
+
+.heating p {
+    text-align: center;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    clear: both;
+}
+
+.picture-row {
+    margin-top: 40px;
+    overflow: hidden;
+}
+.picture-row img {
+    width: 240px;
+    height: 175px;
+    background-position: center;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.picture-row img:first-child {
+    margin-left: 90px;
 }
