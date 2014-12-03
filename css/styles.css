@@ -313,3 +313,46 @@ html, body {
 .picture-row img:first-child {
     margin-left: 90px;
 }
+
+.section.about-us {
+    background-color: #eef1f5
+}
+
+.about-us p {
+    margin-top: 30px;
+    margin-bottom: 0;
+    clear: both;
+}
+
+.pictures {
+    overflow: hidden;
+}
+
+.pictures .img {
+    width: 140px;
+    float: left;
+    height: 100px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.pictures .img:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.pictures .img img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pictures.last-row {
+    margin-left: 280px;
+}
+
+.about-us .car {
+    overflow: hidden;
+    margin-top: 60px;
+}
