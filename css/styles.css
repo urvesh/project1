@@ -1,7 +1,13 @@
 
 html, body {
     /*background-image: url(../img/homepage.jpg);*/
-    /*font-family: Open Sans, sans-serif;*/
+    /*opacity: .8;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center top;*/
+
+
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
     margin: 0;
     padding: 0;
     min-width: 980px;
@@ -25,10 +31,16 @@ html, body {
 #logo {
     width: 192px;
     font-family: Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 12.6px;
     font-weight: bold;
     color: #3f8252;
     margin-top: 12px;
+    white-space: nowrap;
+}
+
+#logo div {
+    margin-left: -1px;
+    margin-top: 2px;
 }
 
 .uppercase {
@@ -47,8 +59,20 @@ html, body {
 }
 
 #branding .availability {
-    margin-left: 50px;
+    margin-left: 47px;
     text-align: right;
+}
+
+#branding .availability .call-us {
+    margin-top: -3px;
+}
+
+#branding .availability .call-us span {
+    font-weight: bold;
+}
+
+#branding .availability .call-us span:last-child {
+    color: #3f8252;
 }
 
 #branding .facebook-icon {
@@ -72,7 +96,8 @@ html, body {
     list-style: none;
     float: left;
     margin-right: 40px;
-    margin-left: 40px;
+    margin-left: 42px;
+    letter-spacing: 1px;
 }
 
 #nav-bar ul li:first-child {
@@ -87,9 +112,13 @@ html, body {
 #header h1 {
     color: #5d5d5d;
     margin-bottom: 0;
-    }
+    font-size: 34px;
+}
 
 #header .sub-text {
+    margin-left: 2px;
+    margin-top: 1px;
+    letter-spacing: .35px;
     font-size: 14px;
     color: #a5a5a5;
 }
@@ -97,17 +126,18 @@ html, body {
 #header .statement {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     color: #3f8252;
-    margin-top: 20px;
+    margin-top: 24px;
     letter-spacing: 6px;
+    margin-left: 8px;
 }
 
 .video {
     width: 550px;
     height: 280px;
     background-color: #4a5b66;
-    margin: 40px auto 40px auto;
+    margin: 38px auto 40px auto;
     border-radius: 5px;
     position: relative;
 }
@@ -150,9 +180,13 @@ html, body {
 
 #facebook-bar .like-us {
     font-family: Helvetica, sans-serif;
-    margin-top: 16px;
+    margin-top: 14px;
     margin-left: 175px;
     color: white;
+}
+
+#facebook-bar .like-us span {
+    font-size: 19px;
 }
 
 #facebook-bar .like-us span:first-child {
@@ -160,13 +194,13 @@ html, body {
 }
 
 #facebook-bar .facebook-button img {
-    margin-top: 13px;
-    margin-left: 15px;
+    margin-top: 12px;
+    margin-left: 16px;
 }
 
 #facebook-bar .facebook-likes {
-    margin-top: 16px;
-    margin-left: 5px;
+    margin-top: 14px;
+    margin-left: 6px;
     color: white;
     font-size: 14px;
     font-family: Open Sans, sans-serif;
@@ -174,19 +208,25 @@ html, body {
 }
 
 #content {
-    margin-top: 40px;
+    margin-top: 31px;
     font-family: Open Sans, sans-serif;
     font-size: 14px;
     overflow: hidden;
 }
 
-#content p {
-    margin: 0;
-    line-height: 170%;
+#content p.uppercase {
+    margin: 3px 0 0 1px;
+}
+
+#content p:not(.uppercase) {
+    margin: 4px 0 0 2px;
+    line-height: 25px;
+    font-size: 13px;
 }
 
 .content-left {
     width: 516px;
+    margin-left: -1px;
 }
 
 .content-left p:first-child {
@@ -195,22 +235,29 @@ html, body {
     margin-bottom: 5px;
 }
 
+.content-right {
+    overflow: hidden;
+}
+
 .content-right ul {
     margin: 0;
+    list-style-type: none;
 }
 
 .content-right ul li {
-    margin-bottom: .3em;
+    margin-bottom: .55em;
+    font-size: 13px;
 }
 
 .table {
     overflow: hidden;
-    margin-top: 40px;
+    margin-top: 32px;
     margin-bottom: 40px;
+    background-color: white;
 }
 
 .table .row-header.blue{
-    height: 310px;
+    height: 319px;
     width: 25px;
     background-color: #2980b9;
 }
@@ -222,29 +269,40 @@ html, body {
     white-space: nowrap;
     color: #ffffff;
     font-family: Open Sans, sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 .table .row-header.blue .vertical-text {
     position: relative;
-    top: 240px;
+    top: 219px;
 }
 
 .table .row-header.red {
-    height: 170px;
+    height: 168px;
     width: 25px;
     background-color: #c0392b;
+    margin-right: 2px;
 }
 
 .table .row-header.red .vertical-text {
     position: relative;
-    top: 100px;
+    top: 97px;
 }
 
 .table table {
-    width: 955px;
-    border-spacing: 3px;
-    background-color: #f7f7f7;
+    border-spacing: 0px;
+}
+
+.table .blue-table th:not(:last-child), .table .blue-table td {
+    border-right: 3px solid white;
+}
+
+.table .blue-table th:first-child {
+    border-left: 2px solid;
+}
+
+.table table th, .table table td{
+    width: 316px;
 }
 
 .table table th {
@@ -253,20 +311,36 @@ html, body {
     color: white;
     font-family: Open Sans, sans-serif;
     font-size: 22px;
-    letter-spacing: 9px;
+    letter-spacing: 7px;
 }
 
 .table table td {
     font-family: Open Sans, sans-serif;
     padding-left: 30px;
-    height: 40px;
+    height: 39px;
     border-bottom: 1px solid #e9e9e9;
+    background-color: #f7f7f7;
+}
+
+.table .blue-table {
+    margin-bottom: 2px;
+}
+
+.table .red-table {
+    margin-top: 3px;
+}
+
+.table .red-table td {
+    border-right: 3px solid white;
+}
+
+.table .red-table tr td:nth-child(2) {
+    padding-left: 32px;
 }
 
 .section {
-    /*height: 400px;*/
     overflow: hidden;
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 40px;
     margin: auto;
 }
@@ -275,30 +349,36 @@ html, body {
     background-color: #eef1f5;
 }
 
-.section h2 {
+.section h1 {
     margin: 0;
-    letter-spacing: 5px;
-    font-family: Open Sans, sans-serif;
+    letter-spacing: 8px;
     text-align: center;
 }
 
-.section.heating h2 {
+.section.heating h1 {
     color: #c0392b;
+    margin-left: 9px;
 }
 
-.section.cooling h2 {
+.section.cooling h1 {
     color: #2980b9;
+    margin-left: 7px;
 }
 
 .section p {
     text-align: center;
-    font-family: Open Sans, sans-serif;
     font-size: 14px;
     clear: both;
+    margin-top: 18px;
+    line-height: 22px;
+}
+
+.section.cooling p {
+    margin-left: 2px;
 }
 
 .picture-row {
-    margin-top: 40px;
+    margin-top: 36px;
     overflow: hidden;
 }
 .picture-row img {
@@ -315,12 +395,16 @@ html, body {
 }
 
 .section.about-us {
-    background-color: #eef1f5
+    background-color: #eef1f5;
+    padding-bottom: 0;
+}
+
+.section.about-us h1 {
+    margin-left: 8px;
 }
 
 .about-us p {
-    margin-top: 30px;
-    margin-bottom: 0;
+    margin: 19px 0 15px 2px;
     clear: both;
 }
 
@@ -336,6 +420,7 @@ html, body {
     text-align: center;
 }
 
+
 .pictures .img:before {
     content: ' ';
     display: inline-block;
@@ -348,11 +433,16 @@ html, body {
     vertical-align: middle;
 }
 
+.pictures.row-three {
+    margin-top: -7px;
+}
+
 .pictures.last-row {
     margin-left: 280px;
+    margin-top: -8px;
 }
 
 .about-us .car {
     overflow: hidden;
-    margin-top: 60px;
+    margin-top: 39px;
 }
